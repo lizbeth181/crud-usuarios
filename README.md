@@ -85,6 +85,11 @@ php artisan migrate --seed
 ```bash
 php artisan serve
 ```
+mantener encendido
+7. en otra terminal 
+```bash
+npm run dev
+```
 
 La aplicación estará disponible en: `http://localhost:8000`
 
