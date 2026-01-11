@@ -76,11 +76,13 @@ php artisan key:generate
 php artisan migrate --seed
 ```
 Nota sobre la base de datos: El comando anterior creara automaticamente todas las tablas y registros necesarios para las pruebas mediante las migraciones y seeders incluidos en el codigo.
+
 Credenciales de Acceso: Una vez ejecutado el comando anterior, podra ingresar con los siguientes datos de prueba:
 
 Usuario: admin@gmail.com
 
 Contraseña: password123
+
 6. Ejecucion del Servidor:
 Para visualizar el proyecto ejecute los siguiente comandos y mantenga la terminal abierta en todo momento:
 ```bash
