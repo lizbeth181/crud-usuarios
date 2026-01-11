@@ -43,27 +43,24 @@ Su objetivo es demostrar la integración de Laravel con React a través de Inert
 ```bash
 git clone <URL_DEL_REPOSITORIO> && cd nombre-del-proyecto
 ````
-
-2. Instalar dependencias de PHP (Laravel)
-
+2. Generar dependencias de PHP (Carpeta vendor):
+Este paso es indispensable ya que contiene el nucleo de Laravel
 ```bash
 composer install
 ```
-
-3. Instalar dependencias de frontend
-
+3. Generar dependencias de Frontend (Carpeta node_modules):
+Este paso descarga las librerias de React y compila los estilos de Tailwind
 ```bash
 npm install && npm run build
 ```
-
-4. Configurar entorno (.env)
+4. Configurar el archivo de entorno (.env):
+Copie el archivo base y configure sus credenciales de base de datos.
 
 ```bash
 cp .env.example .env
 ```
 
-Configurar credenciales de base de datos:
-
+Configuracion recomendada para Laragon:
 ```env
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -72,26 +69,29 @@ DB_DATABASE=crud_usuarios
 DB_USERNAME=root
 DB_PASSWORD=
 ```
-
-5. Preparar la aplicación
-
+5. Preparar la Aplicacion y Base de Datos:
+Es necesario tener creada una base de datos vacia con el nombre crud_usuarios en su gestor (MySQL/Laragon) antes de ejecutar:
 ```bash
 php artisan key:generate
 php artisan migrate --seed
 ```
+Nota sobre la base de datos: El comando anterior creara automaticamente todas las tablas y registros necesarios para las pruebas mediante las migraciones y seeders incluidos en el codigo.
+Credenciales de Acceso: Una vez ejecutado el comando anterior, podra ingresar con los siguientes datos de prueba:
 
-6. Iniciar el servidor
+Usuario: admin@gmail.com
 
+Contraseña: password123
+6. Ejecucion del Servidor:
+Para visualizar el proyecto ejecute los siguiente comandos y mantenga la terminal abierta en todo momento:
 ```bash
 php artisan serve
-```
-mantener encendido
-7. en otra terminal 
+``` 
 ```bash
 npm run dev
 ```
 
 La aplicación estará disponible en: `http://localhost:8000`
+Si cierra la terminal, el servidor se detendra y la pagina dejara de cargar.
 
 ---
 
