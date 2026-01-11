@@ -79,7 +79,7 @@ Nota sobre la base de datos: El comando anterior creara automaticamente todas la
 
 Credenciales de Acceso: Una vez ejecutado el comando anterior, podra ingresar con los siguientes datos de prueba:
 
-Usuario: admin@gmail.com
+Usuario: admin@ejemplo.com
 
 Contraseña: password123
 
